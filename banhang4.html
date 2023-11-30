@@ -49,7 +49,54 @@
 #actions {
     display: flex;
 }
-
+*{  
+    padding: 0; 
+    margin: 0;
+}
+ul{
+list-style: none;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.2;
+}
+#wrapper{
+height: 10vh;
+display: flex;
+justify-content: center;
+}
+nav{
+margin-top: 20px;
+}
+ul#main-menu {
+display: flex;
+}
+ul#main-menu li{
+padding: 0px 20px;
+}
+ul#main-menu a{     
+display: block;
+padding: 15px 0px;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+color: black;
+position: relative;
+}
+ul#main-menu a::after{
+content: "";
+height: 5px;
+width: 10px;
+background-color: blue;
+position: absolute;
+bottom: 0px;
+left: 0 ;
+transition: all 0.5s ease-in-out;
+}
+ul#main-menu a:hover::after{
+width: 50%; 
+transform: translate(100%);
+}
 #actions .item {
     margin-left:22px;
 }
